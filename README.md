@@ -138,6 +138,8 @@ Isn't that awesome? This is part of the power of testing, in that you can be sur
 
 If your `Contact` class didn't quite pass muster and some of the tests are failing, don't sweat it. We don't want you to get hung up here. Ask an Instructor nicely and they'll provide you with a `Contact` class that'll work for the purposes of this assignment.
 
+Go ahead and commit your changes now that you've updated the `Contact` class.
+
 #### What about the `CRM` Class?
 
 What about the `CRM` class from the non-web CRM assignment? I'm glad you asked! The previous `CRM` class was built as a command-line interface. But now we are going to build a web interface, so the old `CRM` class is obsolete and we won't be using it here!
