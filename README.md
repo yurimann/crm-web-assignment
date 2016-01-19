@@ -16,7 +16,7 @@ Before we get started, there are a few concepts to introduce to you, and a few c
 
 When clients make HTTP requests, they pass along a URL, a method (or verb), a series of headers and sometimes a body containing data. When servers return HTTP responses, they pass along a response code (status code), headers and the response body containing the requested data. We care especially about two properties in general: **request methods** and **response codes**: they are able to help describe the nature of a request or response.
 
-![](https://cdn.tutsplus.com/net/authors/jeremymcpeak/http1-req-res-details.png)
+![Image of Request & Response](https://github.com/Lundalogik/HTTP-explained/blob/master/presentation/img/http1-req-res-details.png)
 
 ### Request Methods
 
