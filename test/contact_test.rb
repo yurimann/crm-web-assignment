@@ -4,7 +4,7 @@ require_relative '../contact'
 class TestContact < Minitest::Test
 
   def setup
-    @contact = Contact.create('Foo', 'Bar', 'foo@bar.com', 'some note')
+    @contact = Contact.create('Grace', 'Hopper', 'grace@hopper.com', 'computer scientist')
   end
 
   def teardown
@@ -15,12 +15,12 @@ class TestContact < Minitest::Test
     assert_equal [@contact], Contact.all
   end
 
-  def test_get
-    assert_equal @contact, Contact.get(@contact.id)
+  def test_find
+    assert_equal @contact, Contact.find(@contact.id)
   end
 
-  def test_search_by_attribute
-    assert_equal [@contact], Contact.search_by_attribute('first_name', 'Foo')
+  def test_find_by
+    assert_equal [@contact], Contact.find_by('first_name', 'Grace')
   end
 
   def test_delete_all
@@ -29,12 +29,12 @@ class TestContact < Minitest::Test
   end
 
   def test_full_name
-    assert_equal 'Foo Bar', @contact.full_name
+    assert_equal 'Grace Hopper', @contact.full_name
   end
 
   def test_update
-    @contact.update('note', 'some other note')
-    assert_equal 'some other note', @contact.note
+    @contact.update('note', 'wrote the first compiler in 1952')
+    assert_equal 'wrote the first compiler in 1952', @contact.note
   end
 
   def test_delete
