@@ -109,7 +109,7 @@ As you can see, it really doesn't take much to get started with Sinatra! The blo
 
 #### Re-use the `Contact` Class
 
-We are now almost ready to start this assignment! 
+We are now almost ready to start this assignment!
 
 But first, please copy & paste the `Contact` class from your crm assignment into the provided `contact.rb` file that has been provided to you. We are going to reuse that class in this assignment.
 
@@ -122,7 +122,7 @@ ruby test/contact_test.rb
 If your `Contact` class has been implemented "correctly", you should see something like the following:
 
 ```
-$ ruby test/contact_test.rb 
+$ ruby test/contact_test.rb
 Run options: --seed 13446
 
 # Running:
@@ -144,7 +144,7 @@ Go ahead and commit your changes now that you've updated the `Contact` class.
 
 What about the `CRM` class from the non-web CRM assignment? I'm glad you asked! The previous `CRM` class was built as a command-line interface. But now we are going to build a web interface, so the old `CRM` class is obsolete and we won't be using it here!
 
-That's the great thing about classes in that you can build them in such a way that you can re-use them across projects! As we upgrade parts of the application, we can get rid of obsolete parts and keep the parts that don't have anything to do with what we're upgrading. 
+That's the great thing about classes in that you can build them in such a way that you can re-use them across projects! As we upgrade parts of the application, we can get rid of obsolete parts and keep the parts that don't have anything to do with what we're upgrading.
 
 ## 4. Assignment Parts
 
