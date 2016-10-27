@@ -146,7 +146,7 @@ What about the `CRM` class from the non-web CRM assignment? I'm glad you asked! 
 
 That's the great thing about classes in that you can build them in such a way that you can re-use them across projects! As we upgrade parts of the application, we can get rid of obsolete parts and keep the parts that don't have anything to do with what we're upgrading.
 
-## 4. Assignment Parts
+## 4. Assignment
 
 This is a fairly large assignment that is spread out over four days. On each day, follow the instructions on the following pages:
 
