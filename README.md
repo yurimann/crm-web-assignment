@@ -150,10 +150,10 @@ That's the great thing about classes in that you can build them in such a way th
 
 This is a fairly large assignment that is spread out over four days. On each day, follow the instructions on the following pages:
 
-* Day 1: [Requests & Responses](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Part-1:-Requests-&-Responses)
-* Day 2: [Layouts, HTML, & CSS](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Part-2:-Layouts,-HTML,-&-CSS)
-* Day 3: [Working with Forms](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Part-3:-Working-with-Forms)
-* Day 4: [Saving your Data](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Part-4:-Saving-your-Data)
+* Day 1: [Requests & Responses](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Day-1:-Requests-&-Responses)
+* Day 2: [Layouts, HTML, & CSS](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Day-2:-Layouts,-HTML,-&-CSS)
+* Day 3: [Working with Forms](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Day-3:-Working-with-Forms)
+* Day 4: [Saving your Data](https://github.com/bitmakerlabs/crm-web-assignment/wiki/Day-4:-Saving-your-Data)
 
 As you are working on this assignment, you should be getting in the habit of commit each significant piece of work throughout the day. At the end of each day don't forget to push your code to Github!
 
