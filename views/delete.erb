@@ -1,0 +1,10 @@
+<ul>
+  <% Contact.all.each do |contact| %>
+  <li><%= contact.id %><%= contact.first_name %> <%= contact.last_name %></li>
+  <% end %>
+</ul>
+<p>Enter ID of person to delete</p>
+<form action='/contacts/delete' method='post'>
+  <input type='text' name='id'>
+  <input type='submit' value='id'>
+</form>
