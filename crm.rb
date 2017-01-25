@@ -8,7 +8,7 @@ use Rack::MethodOverride
 # Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
 # Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
 # Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
-Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
+# Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
 
 get '/' do
   @crm_app_name = "Yuri's CRM"
@@ -65,6 +65,16 @@ put '/contacts/:id' do
     @contact.email = params[:email]
     @contact.note = params[:note]
 
+    redirect to('/contacts')
+  else
+    raise Sinatra::NotFound
+  end
+end
+
+delete '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+  if @contact
+    @contact.delete
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
