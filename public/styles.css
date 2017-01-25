@@ -72,3 +72,8 @@ a {
   padding-left: 0;
   line-height: 1.5;
 }
+
+a.name {
+   text-decoration: none;
+   color: black;
+}
