@@ -24,8 +24,13 @@ get '/contacts/new' do
 end
 
 post '/contacts' do
-  Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
-  redirect to('/contacts')
+  contact = Contact.create(
+    first_name: params[:first_name],
+    last_name:  params[:last_name],
+    email:      params[:email],
+    note:       params[:note]
+    )
+    redirect to('/contacts')
 end
 
 get '/contacts/delete' do
