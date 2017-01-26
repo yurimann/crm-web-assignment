@@ -65,10 +65,13 @@ end
 put '/contacts/:id' do
   @contact = Contact.find(params[:id].to_i)
   if @contact
-    @contact.first_name = params[:first_name]
-    @contact.last_name = params[:last_name]
-    @contact.email = params[:email]
-    @contact.note = params[:note]
+    @contact.update(
+      first_name: params[:first_name],
+      last_name:  params[:last_name],
+      email:      params[:email],
+      note:       params[:note]
+      )
+
 
     redirect to('/contacts')
   else
@@ -79,7 +82,7 @@ end
 delete '/contacts/:id' do
   @contact = Contact.find(params[:id].to_i)
   if @contact
-    @contact.delete
+    Contact.destroy(params[:id].to_i)
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
