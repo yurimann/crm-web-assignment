@@ -5,10 +5,10 @@ require 'sinatra'
 require_relative 'contact'
 use Rack::MethodOverride
 
-Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
-Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
-Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
-Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
+# Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
+# Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
+# Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
+# Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
 
 get '/' do
   @crm_app_name = "Yuri's CRM"
@@ -78,5 +78,9 @@ delete '/contacts/:id' do
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
+  end
+
+  after do
+    ActiveRecord::Base.connection.close
   end
 end
